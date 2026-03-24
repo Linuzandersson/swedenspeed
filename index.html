@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Tuningdelar Shop</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid red;
+}
+
+/* NAVBAR */
+nav {
+    background: #1a1a1a;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* PRODUKTER */
+.container {
+    padding: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px red;
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.price {
+    color: #00ff88;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button {
+    background: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: darkred;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>🚗 Tuningdelar Shop</h1>
+    <p>Prestanda & styling för din bil</p>
+</header>
+
+<nav>
+    <a href="#">Avgassystem</a>
+    <a href="#">Spoilers</a>
+    <a href="#">LED-ljus</a>
+    <a href="#">Fälgar</a>
+</nav>
+
+<div class="container">
+    <h2>🔥 Populära produkter</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
+            <h3>Sportavgassystem</h3>
+            <p class="price">2999 kr</p>
+            <button>Köp</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2">
+            <h3>Bakspoiler</h3>
+            <p class="price">1499 kr</p>
+            <button>Köp</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+            <h3>LED Ramp</h3>
+            <p class="price">899 kr</p>
+            <button>Köp</button>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+            <h3>Sportfälgar</h3>
+            <p class="price">4999 kr</p>
+            <button>Köp</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Tuningdelar Shop</p>
+</footer>
+
+</body>
+</html>
